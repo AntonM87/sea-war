@@ -1,0 +1,8 @@
+#messageArea{
+  width: 250px;
+  min-height: 50px;
+  background: #f76436;
+  text-align: center;
+  padding: 10px;
+  @include font_setting($message_color,30px)
+}

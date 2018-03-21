@@ -1,0 +1,47 @@
+body{
+  background-color: $body_background;
+  width: auto;
+  #board {
+    width: 100%;
+    height: 100%;
+    table{
+      padding-left: 20%;
+      border-spacing: 0;
+      #liter{
+        background: none;
+        border: none;
+        @include font_setting(#fff,40px);
+      }
+      td {
+        @include transition_setting;
+        border: 1px solid $cell_border;
+        content: '';
+        background: $cell_background;
+        width: 70px;
+        height: 70px;
+        &:hover{
+          background: $cell_background/1.2;
+        }
+      }
+    }
+    .numberPlace{
+      td{
+        background: none;
+        border: none;
+        font: {
+          family: "Apple Braille";
+          size: 42px;
+          weight: 500;
+        };
+        color: #fff;
+        padding: 0 6%;
+        &:hover{
+          background: $body_background;
+        }
+      }
+      tr{
+        padding-left: 30%;
+      }
+    }
+  }
+}

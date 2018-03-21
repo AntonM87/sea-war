@@ -1,0 +1,38 @@
+$cell_border: #0f02f7;
+$cell_background: #50ecff;
+$body_background: #000;
+$message_color: #000;
+
+@mixin font_setting($color,$size){
+  font: {
+    family: "Apple Braille";
+    size: $size;
+    weight: 500;
+  };
+  color: $color;
+}
+@mixin transition_setting(){
+  transition: background linear 0.2s;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+@import "body";
+@import "img";
+@import "valueInput";
+@import "messageArea";
+@import "form";
+
+.hit{
+  content: url("ship.png");
+  width: 83%;
+  height: 83%;
+  z-index: 1;
+  padding-left: 5px;
+}
+.miss:before {
+  content: 'MISS';
+  @include font_setting(#000, 20px);
+  padding-left: 7px;
+}

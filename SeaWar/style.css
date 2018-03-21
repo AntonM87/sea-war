@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #000;
+  width: auto; }
+  body #board {
+    width: 100%;
+    height: 100%; }
+    body #board table {
+      padding-left: 20%;
+      border-spacing: 0; }
+      body #board table #liter {
+        background: none;
+        border: none;
+        font-family: "Apple Braille";
+        font-size: 40px;
+        font-weight: 500;
+        color: #fff; }
+      body #board table td {
+        transition: background linear 0.2s;
+        border: 1px solid #0f02f7;
+        content: '';
+        background: #50ecff;
+        width: 70px;
+        height: 70px; }
+        body #board table td:hover {
+          background: #43c5d5; }
+    body #board .numberPlace td {
+      background: none;
+      border: none;
+      font-family: "Apple Braille";
+      font-size: 42px;
+      font-weight: 500;
+      color: #fff;
+      padding: 0 6%; }
+      body #board .numberPlace td:hover {
+        background: #000; }
+    body #board .numberPlace tr {
+      padding-left: 30%; }
+
+img {
+  height: 80%;
+  padding-left: 10%;
+  background-size: contain; }
+
+#valueInput, form #fireButton {
+  width: auto;
+  height: 100px; }
+
+#messageArea {
+  width: 250px;
+  min-height: 50px;
+  background: #f76436;
+  text-align: center;
+  padding: 10px;
+  font-family: "Apple Braille";
+  font-size: 30px;
+  font-weight: 500;
+  color: #000; }
+
+form {
+  width: 210px;
+  padding: 15px;
+  background: #53af13; }
+  form #valueInput, form #fireButton {
+    background: #98cd71;
+    border: #53af13;
+    font-size: 28px;
+    text-align: center;
+    width: 100px;
+    color: #f70513; }
+  form #fireButton {
+    color: #000000; }
+
+.hit {
+  content: url("ship.png");
+  width: 83%;
+  height: 83%;
+  z-index: 1;
+  padding-left: 5px; }
+
+.miss:before {
+  content: 'MISS';
+  font-family: "Apple Braille";
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  padding-left: 7px; }
+
+/*# sourceMappingURL=style.css.map */
